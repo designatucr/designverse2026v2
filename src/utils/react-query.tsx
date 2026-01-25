@@ -1,17 +1,28 @@
-"use client";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import {
+  dehydrate,
+  HydrationBoundary,
+  QueryClient,
+  QueryFunction,
+  QueryKey,
+} from "@tanstack/react-query";
 
-const client = new QueryClient({
-  defaultOptions: {
-    queries: {
-      staleTime: 60000,
-      gcTime: 10 * 60 * 1000,
-    },
-  },
-});
-
-export const ReactQueryClientProvider = ({
+export const ReactQuery = async ({
   children,
+  query,
+  queryKey,
 }: {
   children: React.ReactNode;
-}) => <QueryClientProvider client={client}>{children}</QueryClientProvider>;
+  query: QueryFunction;
+  queryKey: QueryKey;
+}) => {
+  const client = new QueryClient();
+
+  await client.prefetchQuery({
+    queryKey,
+    queryFn: query,
+  });
+
+  return (
+    <HydrationBoundary state={dehydrate(client)}>{children}</HydrationBoundary>
+  );
+};

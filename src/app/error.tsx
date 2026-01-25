@@ -1,7 +1,18 @@
 "use client";
+import Error from "@/components/error";
 
-const Error = () => {
-  return <div>Error</div>;
+type props = {
+  error: {
+    code: number;
+    error: string;
+    name: string;
+    message: string;
+    dev: string;
+  };
 };
 
-export default Error;
+const InternalError = ({ error: { code, name, message, dev } }: props) => {
+  return <Error code={code} name={name} message={message} dev={dev} />;
+};
+
+export default InternalError;
