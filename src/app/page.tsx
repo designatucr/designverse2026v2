@@ -1,9 +1,15 @@
-const Home = () => {
+import Release from "@/components/release";
+import RELEASES from "@/data/releases";
+import Live from "@/components/live";
+
+const Page = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      Hello World
+    <div className="w-full">
+      <Release release={RELEASES["/"]}>
+        <Live />
+      </Release>
     </div>
   );
 };
 
-export default Home;
+export default Page;
