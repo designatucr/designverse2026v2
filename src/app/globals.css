@@ -1,15 +1,10 @@
 @import "tailwindcss";
 
-/* -----------------------------
-   CSS Variables
--------------------------------- */
 :root {
-  /* Fonts */
   --font-poppins: var(--font-poppins);
   --font-inter: Inter, sans-serif;
   --font-work-sans: "Work Sans", sans-serif;
 
-  /* Hackathon Colors */
   --hackathon-primary: #22577a;
   --hackathon-blue-100: #38a3a5;
   --hackathon-green-100: #e7f7e9;
@@ -19,25 +14,20 @@
   --hackathon-gray-300: #525252;
   --hackathon-page: #f5f5f5;
 
-  /* Status */
   --status-pending: #ffcf55;
   --status-accepted: #80ed99;
   --status-rejected: #f07167;
 
-  /* Table */
   --table-pending: #fff0bb;
   --table-accepted: #cfede9;
   --table-rejected: #ffe8e2;
   --table-selected: #e7f7e9;
 
-  /* Calendar */
   --calendar-today: #e7f7e9;
 
-  /* Timer */
   --timer-add: #0e1729;
   --timer-clear: #ef4444;
 
-  /* Tags */
   --tag-red-bg: #ffe9e2;
   --tag-red-text: #f07167;
   --tag-yellow-bg: #fff0bc;
@@ -58,7 +48,6 @@
   --tag-pink-text: #f583f1;
   --tag-white: #ffffff;
 
-  /* Sidebar */
   --sidebar-bg: #22577a;
   --sidebar-foreground: #f5f5f5;
   --sidebar-primary: #38a3a5;
@@ -68,7 +57,6 @@
   --sidebar-border: #e7e7e7;
   --sidebar-ring: #ffcf55;
 
-  /* Landing */
   --landing-blue-100: #9de1ff;
   --landing-orange-100: #ffe0d2;
   --landing-orange-200: #c3a47e;
@@ -81,9 +69,6 @@
   --landing-beige-200: #f1d8bf;
 }
 
-/* -----------------------------
-   Dark Mode Overrides
--------------------------------- */
 .dark {
   --hackathon-page: #0e1729;
   --hackathon-gray-100: #1f2937;
@@ -92,16 +77,11 @@
   --sidebar-foreground: #f5f5f5;
 }
 
-/* -----------------------------
-   Theme Configuration
--------------------------------- */
 @theme {
-  /* Fonts */
   --font-family-poppins: var(--font-poppins);
   --font-family-inter: Inter, sans-serif;
   --font-family-work-sans: "Work Sans", sans-serif;
 
-  /* Hackathon Colors */
   --color-hackathon-primary: #22577a;
   --color-hackathon-blue-100: #38a3a5;
   --color-hackathon-green-100: #e7f7e9;
@@ -111,25 +91,20 @@
   --color-hackathon-gray-300: #525252;
   --color-hackathon-page: #f5f5f5;
 
-  /* Status Colors */
   --color-hackathon-status-pending: #ffcf55;
   --color-hackathon-status-accepted: #80ed99;
   --color-hackathon-status-rejected: #f07167;
 
-  /* Table Colors */
   --color-hackathon-table-pending: #fff0bb;
   --color-hackathon-table-accepted: #cfede9;
   --color-hackathon-table-rejected: #ffe8e2;
   --color-hackathon-table-selected: #e7f7e9;
 
-  /* Calendar Colors */
   --color-hackathon-calendar-today: #e7f7e9;
 
-  /* Timer Colors */
   --color-hackathon-timer-add: #0e1729;
   --color-hackathon-timer-clear: #ef4444;
 
-  /* Tag Colors */
   --color-hackathon-tags-red-bg: #ffe9e2;
   --color-hackathon-tags-red-text: #f07167;
   --color-hackathon-tags-yellow-bg: #fff0bc;
@@ -150,7 +125,6 @@
   --color-hackathon-tags-pink-text: #f583f1;
   --color-hackathon-tags-white: #ffffff;
 
-  /* Sidebar Colors */
   --color-sidebar: #22577a;
   --color-sidebar-foreground: #f5f5f5;
   --color-sidebar-primary: #38a3a5;
@@ -160,7 +134,6 @@
   --color-sidebar-border: #e7e7e7;
   --color-sidebar-ring: #ffcf55;
 
-  /* Landing Colors */
   --color-landing-blue-100: #9de1ff;
   --color-landing-orange-100: #ffe0d2;
   --color-landing-orange-200: #c3a47e;
@@ -172,7 +145,6 @@
   --color-landing-beige-100: #fbe8d5;
   --color-landing-beige-200: #f1d8bf;
 
-  /* Animations */
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-collapsible-down: collapsible-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
@@ -180,9 +152,6 @@
   --animate-caret-blink: caret-blink 1.25s ease-out infinite;
 }
 
-/* -----------------------------
-   Base Styles
--------------------------------- */
 @layer base {
   body {
     background-color: var(--hackathon-page);
@@ -191,9 +160,6 @@
   }
 }
 
-/* -----------------------------
-   Keyframe Animations
--------------------------------- */
 @keyframes accordion-down {
   from {
     height: 0;

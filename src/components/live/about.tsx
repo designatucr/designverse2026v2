@@ -40,7 +40,7 @@ const About = () => {
         id="about"
         className="bg-beige-100 z-20 w-full items-start justify-center py-32 md:py-64"
       >
-        <div className="bg-landing-beige-200 pr-[8vw] pl-[8vw] font-semibold sm:w-full md:w-7/8">
+        <div className="bg-landing-beige-200 pr-[8vw] pl-[8vw] font-semibold sm:w-full">
           <div className="font-inter text-landing-brown-300 py-16 text-left text-4xl font-bold md:text-7xl">
             {" "}
             ABOUT US{" "}
