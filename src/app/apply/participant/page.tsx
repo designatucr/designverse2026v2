@@ -1,4 +1,4 @@
-import ParticipantForm from "@/components/ParticipantForm";
+import ParticipantForm from "@/components/apply/ParticipantForm";
 
 const Apply = () => {
   return <ParticipantForm />;

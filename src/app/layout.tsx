@@ -9,6 +9,11 @@ type Props = {
   children: React.ReactNode;
 };
 
+export const metadata = {
+  title: "DesignVerse 2026",
+  description: "DesignVerse is a 24 Hour Designathon hosted by UCR.",
+};
+
 const RootLayout = async ({ children }: Props) => {
   return (
     <html lang="en">
