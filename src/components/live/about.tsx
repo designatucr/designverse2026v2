@@ -6,7 +6,6 @@ import Image from "next/image";
 import bunny from "@/public/landing/bunny.svg";
 import matcha from "@/public/landing/matcha.svg";
 import taiyaki from "@/public/landing/taiyaki.svg";
-// eslint-disable-next-line
 const inter = Inter({ subsets: ["latin"] });
 
 const support = [

@@ -1,5 +1,7 @@
 import data from "@/data/config";
 
+export const dynamic = "force-static";
+
 const sitemap = () => {
   return [
     {
