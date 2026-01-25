@@ -18,7 +18,7 @@ const Landing = () => {
         href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white"
         target="_blank"
         rel="nopener noreferrer"
-        className="absolute top-0 right-3 z-1 z-50 w-12 cursor-pointer md:w-28 lg:right-10"
+        className="absolute top-0 right-3 z-1 w-12 cursor-pointer md:w-28 lg:right-10"
       >
         <Image
           className="transition hover:scale-110"

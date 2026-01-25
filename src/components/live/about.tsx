@@ -48,7 +48,7 @@ const About = () => {
           </div>
           <div className="flex flex-col items-start gap-8 md:flex-row md:gap-12">
             <div className="relative flex-1">
-              <div className="bg-hackathon-primary text-landing-brown-400 relative p-6 py-24 shadow-[5px_5px_5px_rgba(0,0,0,0.3)] sm:p-12">
+              <div className="text-landing-brown-400 relative bg-white p-6 py-24 shadow-[5px_5px_5px_rgba(0,0,0,0.3)] sm:p-12">
                 <div className="absolute top-0 left-0 h-8 w-28 translate-x-[-25%] translate-y-[15%] rotate-[-38deg] bg-blue-200/60" />
                 <div className="absolute top-0 right-0 h-8 w-28 translate-x-[25%] translate-y-[-20%] rotate-[38deg] bg-blue-200/60" />
                 <div className="absolute bottom-0 left-0 h-8 w-28 translate-x-[-30%] translate-y-[-20%] rotate-[38deg] bg-blue-200/60" />
