@@ -7,13 +7,15 @@ import bakerySign from "@/public/landing/bakery_sign.svg";
 // import timer from "@/public/landing/timer.svg";
 // import sign from "@/public/landing/sign.svg";
 // import bakery from "@/public/landing/bakery.svg";
+import leftLampost from "@/public/landing/leftLampost.svg";
+import rightLampost from "@/public/landing/rightLampost.svg";
 import grass from "@/public/landing/grass.svg";
 import bakery2 from "@/public/landing/bakery2.svg";
 import Link from "next/link";
 
 const Landing = () => {
   return (
-    <div className="from-landing-blue-100 to-landing-orange-100 flex min-h-0 w-full flex-col items-center bg-gradient-to-b">
+    <div className="from-landing-blue-100 to-landing-orange-100 flex min-h-0 w-full flex-col items-center overflow-hidden bg-gradient-to-b">
       <Link
         href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white"
         target="_blank"
@@ -62,7 +64,7 @@ const Landing = () => {
             </div>
           </div>
           <Image src={bakery2} alt="bakery shop" className="z-20 w-[60vw]" />
-          <div className="text-landing-brown-300 absolute top-[60%] z-30 flex w-[90%] flex-col items-center justify-center gap-2 md:gap-5">
+          <div className="text-landing-brown-300 md:top[60%] absolute top-[52%] z-30 flex w-[90%] flex-col items-center justify-center gap-2 md:gap-5 xl:top-[55%]">
             <div className="text-[4vw] font-bold">COMING SOON.</div>
             <div className="text-[2vw]">Something new is brewing...</div>
           </div>
@@ -71,13 +73,24 @@ const Landing = () => {
           <Image
             src={grass}
             alt="left grass box"
-            className="absolute bottom-0 left-[12%] z-30 w-[20%] -translate-x-[21%]"
+            className="absolute bottom-10 left-[12%] z-30 w-[20%] -translate-x-[21%] md:bottom-20 xl:bottom-20"
           />
           <Image
             src={grass}
             alt="right grass box"
-            className="absolute right-[12%] bottom-0 z-30 w-[20%] translate-x-[21%] -scale-x-100"
+            className="absolute right-[12%] bottom-10 z-30 w-[20%] translate-x-[21%] -scale-x-100 md:bottom-20 xl:bottom-20"
           />
+          <Image
+            src={leftLampost}
+            alt="left lampost"
+            className="absolute bottom-5 -left-[9%] z-40 w-[45%] -translate-x-[21%] md:bottom-10"
+          />
+          <Image
+            src={rightLampost}
+            alt="right lampost"
+            className="absolute -right-[29%] bottom-5 z-40 w-[45%] -translate-x-[21%] md:bottom-10"
+          />
+          <div className="z-30 flex h-10 w-screen bg-[#535353] md:h-20" />
         </div>
       </div>
     </div>
