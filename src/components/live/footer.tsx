@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className="relative">
       <Image
-        className="absolute bottom-[90%] left-[30%] w-[40%] hidden md:block"
+        className="absolute bottom-[90%] left-[30%] hidden w-[40%] md:block"
         src={table}
         alt="table and 2 chairs"
       />
