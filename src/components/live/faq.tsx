@@ -9,7 +9,7 @@ import Title from "@/components/ui/title";
 
 const FAQ = () => {
   return (
-    <div className="flex w-full flex-col items-center pt-24">
+    <div className="flex w-full flex-col items-center pt-24 pb-[23%]">
       <Title>FREQUENTLY ASKED QUESTIONS</Title>
       <div className="w-9/12 pt-10">
         <Accordion type="single" collapsible className="w-full">

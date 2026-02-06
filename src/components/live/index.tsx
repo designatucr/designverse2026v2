@@ -7,7 +7,7 @@ import Sponsors from "./sponsors";
 // import Team from "./team";
 // import Committees from "./committees";
 // import Judges from "./judges";
-// import FAQ from "./faq";
+import FAQ from "./faq";
 import Footer from "./footer";
 // import StripeWall from "@/components/live/stripewall";
 
@@ -19,13 +19,13 @@ const Live = () => {
       {/* <Tracks /> */}
       <Sponsors />
       <Resources />
-      {/* 
-      <StripeWall />
-      <Schedule />
-      <Team />
-      <Committees />
-      <Judges /> 
-      <FAQ /> */}
+
+      {/* <StripeWall /> */}
+      {/* <Schedule /> */}
+      {/* <Team /> */}
+      {/* <Committees /> */}
+      {/* <Judges />  */}
+      <FAQ />
       <Footer />
     </>
   );
