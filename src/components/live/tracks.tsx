@@ -48,7 +48,7 @@ const Tracks = () => {
       <p className="font-inter text-landing-brown-300 py-8 text-center text-4xl font-bold md:text-7xl">
         TRACKS
       </p>
-      <div className="flex flex-col flex-wrap justify-center gap-12 py-12 md:w-2/3 md:flex-row">
+      <div className="flex flex-col flex-wrap justify-center gap-12 py-12 md:w-4/5 md:flex-row">
         {tracks.map(({ image, title, customStyles }, index) => (
           <motion.div key={index} {...trackAnimation(index)}>
             <motion.div
@@ -56,11 +56,16 @@ const Tracks = () => {
               className="relative z-20 flex items-center justify-center"
             >
               <p
-                className={`font-inter absolute top-28 z-10 w-48 text-center text-2xl font-semibold break-words ${customStyles}`}
+                className={`font-inter absolute top-20 z-10 w-48 text-center text-2xl font-semibold break-words md:top-28 ${customStyles}`}
               >
                 {title}
               </p>
-              <Image key={index} src={image} alt={title} />
+              <Image
+                key={index}
+                src={image}
+                alt={title}
+                className="w-3/4 md:w-full"
+              />
             </motion.div>
           </motion.div>
         ))}
