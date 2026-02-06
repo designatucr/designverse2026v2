@@ -48,7 +48,7 @@ const Tracks = () => {
       <p className="font-inter text-landing-brown-300 py-8 text-center text-4xl font-bold md:text-7xl">
         TRACKS
       </p>
-      <div className="grid grid-cols-1 gap-12 py-12 lg:grid-cols-3">
+      <div className="flex flex-col flex-wrap justify-center gap-12 py-12 md:w-2/3 md:flex-row">
         {tracks.map(({ image, title, customStyles }, index) => (
           <motion.div key={index} {...trackAnimation(index)}>
             <motion.div
