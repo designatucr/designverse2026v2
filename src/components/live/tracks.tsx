@@ -34,7 +34,7 @@ const Tracks = () => {
             className="relative z-20 flex items-center justify-center"
           >
             <p
-              className={`font-inter absolute top-28 z-10 w-48 text-center text-2xl font-semibold break-words ${customStyles}`}
+              className={`font-inter absolute top-28 z-10 w-48 text-center text-2xl font-semibold wrap-break-word ${customStyles}`}
             >
               {title}
             </p>
