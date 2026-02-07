@@ -5,6 +5,10 @@ import Sponsor3 from "@/public/landing/sponsor3.svg";
 import Sponsor4 from "@/public/landing/sponsor4.svg";
 import Sponsor5 from "@/public/landing/sponsor5.svg";
 import Sponsor6 from "@/public/landing/sponsor6.svg";
+import Sponsor7 from "@/public/landing/sponsor7.svg";
+import Sponsor8 from "@/public/landing/sponsor8.svg";
+import Sponsor9 from "@/public/landing/sponsor9.svg";
+import Sponsor10 from "@/public/landing/sponsor10.svg";
 
 export interface Sponsor {
   image: StaticImageData;
@@ -16,38 +20,62 @@ export interface Sponsor {
 export const sponsors: Sponsor[] = [
   {
     image: Sponsor1,
-    name: "Sponsor 1",
+    name: "Snapchat",
     translateY: false,
-    link: "https://www.purebuttons.com/",
+    link: "https://www.snapchat.com/",
   },
   {
     image: Sponsor2,
-    name: "Sponsor 2",
+    name: "Creat'R Lab",
     translateY: true,
-    link: "https://www.notion.com/",
+    link: "https://library.ucr.edu/research-support/making-and-innovation/creatr-lab-makerspace",
   },
   {
     image: Sponsor3,
-    name: "Sponsor 3",
+    name: "Progressive Graphics",
     translateY: false,
-    link: "/",
+    link: "https://progressive-graphics.com/Progressive_Graphics/shop/home",
   },
   {
     image: Sponsor4,
-    name: "Sponsor 4",
+    name: "Associated Students of UCR",
     translateY: false,
-    link: "/",
+    link: "https://asucr.ucr.edu/",
   },
   {
     image: Sponsor5,
-    name: "Sponsor 5",
-    translateY: true,
-    link: "/",
+    name: "Notion",
+    translateY: false,
+    link: "https://www.notion.com/",
   },
   {
     image: Sponsor6,
-    name: "Sponsor 6",
+    name: "Monster Energy",
+    translateY: true,
+    link: "https://www.monsterenergy.com/en-us/",
+  },
+  {
+    image: Sponsor7,
+    name: "Balsamiq",
     translateY: false,
-    link: "/",
+    link: "https://balsamiq.com/",
+  },
+  {
+    image: Sponsor8,
+    name: "Framer",
+    translateY: false,
+    link: "https://www.framer.com/",
+  },
+  {
+    image: Sponsor9,
+    name: "Azure RP",
+    translateY: false,
+    link: "https://www.axure.com/",
+  },
+  {
+    image: Sponsor10,
+    name: "Pure Buttons",
+    translateY: false,
+    link: "https://www.purebuttons.com/",
   },
 ];

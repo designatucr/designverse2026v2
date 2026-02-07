@@ -50,6 +50,12 @@ const Tracks = () => {
       </p>
       <div className="flex flex-col flex-wrap justify-center gap-12 py-12 md:w-4/5 md:flex-row">
         {tracks.map(({ image, title, customStyles }, index) => (
+          <div
+            key={index}
+            className="relative z-20 flex items-center justify-center"
+          >
+            <p
+              className={`font-inter absolute top-28 z-10 w-48 text-center text-2xl font-semibold wrap-break-word ${customStyles}`}
           <motion.div key={index} {...trackAnimation(index)}>
             <motion.div
               {...hoverAnimation()}
