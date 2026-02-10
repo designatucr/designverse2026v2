@@ -10,13 +10,6 @@ const inter = Inter({ subsets: ["latin"] });
 
 const support = [
   {
-    title: "Become a Mentor",
-    description:
-      "Have experience leading, using Figma, or coordinating groups? Share your knowledge and become a mentor!",
-    form: "Mentor",
-    link: "/apply/mentor",
-  },
-  {
     title: "Sponsor Us",
     description:
       "Have a company or brand you want to bring attention to? Sponsor us to raise brand awareness and exposure through social media and giveaways!",
@@ -28,7 +21,7 @@ const support = [
     description:
       "Need experience or just want to help our organization come to life? Volunteer to help the Designathon happen!",
     form: "Volunteer",
-    link: "/apply/volunteer",
+    link: "https://savvy-chess-30-staging.authkit.app/?client_id=client_01KE0QBMGTXYWCNBPGJK3KTA3H&redirect_uri=https%3A%2F%2Fminerva-sage.vercel.app%2Fcallback&state=eyJyZXR1cm5QYXRobmFtZSI6Ii9kZXNpZ252ZXJzZS9mb3Jtcy92b2x1bnRlZXIifQ%3D%3D&authorization_session_id=01KH37S836AY2DNCCMHGBG1VK9",
   },
 ];
 
@@ -82,33 +75,35 @@ const About = () => {
         <Image
           src={matcha}
           alt="matcha"
-          className="absolute right-[33%] bottom-[30%] z-40 hidden w-1/4 max-w-32 sm:right-[30%] sm:w-1/6 md:right-[25%] md:max-w-32 lg:right-[20%] lg:block lg:max-w-36 xl:right-[25%] xl:max-w-40"
+          className="absolute right-[33%] bottom-[34%] z-40 hidden w-1/4 max-w-32 sm:right-[30%] sm:w-1/6 md:right-[25%] md:max-w-32 lg:right-[20%] lg:max-w-36 xl:right-[25%] xl:block xl:max-w-40"
         />
         <Image
           src={taiyaki}
           alt="taiyaki"
-          className="absolute right-[60%] bottom-[32%] z-40 hidden w-1/4 max-w-28 sm:right-[45%] sm:w-1/6 md:max-w-32 lg:block lg:max-w-36"
+          className="absolute right-[60%] bottom-[34%] z-40 hidden w-1/4 max-w-28 sm:right-[45%] sm:w-1/6 md:max-w-32 lg:max-w-36 xl:block"
         />
       </section>
       <div className="relative">
         <div className="bg-landing-orange-200 z-30 -mt-48 flex h-32 w-full items-center md:-mt-72 lg:-mt-72 xl:-mt-80" />
         <div className="bg-landing-orange-300 h-2/3 p-20">
-          <p className="pb-20 text-center text-4xl font-bold text-white md:text-7xl">
+          <p className="pt-10 pb-20 text-center text-4xl font-bold text-white md:text-5xl lg:text-7xl">
             SUPPORT US{" "}
           </p>
-          <div className="flex flex-col gap-20 px-9 lg:flex-row">
+          <div className="flex flex-col lg:flex-row lg:gap-35 lg:px-35">
             {support.map(({ title, description, form, link }, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-evenly gap-12 text-white"
+                className="mb-17 flex flex-col items-center justify-between gap-7 text-white lg:gap-12"
               >
-                <p className="text-xl font-bold lg:text-3xl">{title}</p>
-                <div className="text-center text-sm lg:text-base">
+                <p className="text-center text-2xl font-bold lg:text-3xl">
+                  {title}
+                </p>
+                <div className="max-w-md text-center text-sm md:text-lg lg:max-w-lg lg:text-base">
                   {description}
                 </div>
                 <Button
                   asChild
-                  className="bg-landing-brown-200 hover:bg-landing-brown-400 w-1/2 rounded-full hover:scale-105"
+                  className="bg-landing-brown-200 hover:bg-landing-brown-400 w-44 rounded-full hover:scale-105"
                 >
                   <Link
                     href={link}
